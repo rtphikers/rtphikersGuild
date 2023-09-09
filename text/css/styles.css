@@ -1,0 +1,32 @@
+body {
+    background-color: #000; /* Black background color */
+    color: #fff; /* White text color */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+.logo {
+    margin-top: 20px;
+}
+
+img {
+    max-width: 200px; /* Adjust the logo size as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Add additional CSS styles for your content section as needed */
+section {
+    /* Add styles for your content section here */
+}
