@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,9 +15,21 @@
 
         .header {
             text-align: center;
-             background-color: #e7c781; /* Light background color */
-; /* Green header background */
+            background-color: #e7c781; /* Light background color; Green header background */
             padding: 30px 0;
+        }
+
+        .circular-border {
+            width: 100px; /* Adjust the width and height as needed */
+            height: 100px;
+            border-radius: 500%; /* This makes the border circular */
+            overflow: hidden; /* Ensures the image doesn't overflow the circular border */
+        }
+
+        .circular-border img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Maintains the aspect ratio and covers the circular border */
         }
 
         .header h1 {
@@ -90,60 +104,107 @@
             text-align: center;
             margin-top: 20px;
         }
+
+        /* Media Queries for Responsiveness */
+        @media screen and (max-width: 768px) {
+            .header {
+                padding: 20px 0;
+            }
+
+            .header h1 {
+                font-size: 32px;
+            }
+
+            .header p {
+                font-size: 16px;
+            }
+
+            .logo {
+                max-width: 80px;
+                top: 10px;
+                right: 10px;
+            }
+
+            .section h2 {
+                font-size: 24px;
+            }
+
+            .video iframe {
+                max-width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .header h1 {
+                font-size: 24px;
+            }
+
+            .header p {
+                font-size: 14px;
+            }
+
+            .container {
+                padding: 10px;
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="header">
+<div class="header">
+    <div class="circular-border">
         <img src="images/logoRTP.png" alt="Logo" class="logo">
-        <h1>RTP Hikers Guild</h1>
-        <p>Unleash Your Hiking Adventure</p>
     </div>
-    <div class="container">
-        <div class="section">
-            <h2>Our Mission</h2>
-            <p>At RTP Hikers Guild, our mission is to inspire and empower novice hikers to embrace the wonders of hiking while fostering camaraderie and respect for nature. Hiking isn't just about conquering trails; it's a transformative experience that connects you with nature, improves fitness, and introduces you to a welcoming community of outdoor enthusiasts.</p>
-        </div>
-        <div class="section">
-            <h2>Why Choose RTP Hikers Guild</h2>
-            <p>We're dedicated to providing a novice-friendly environment for hikers just starting their journey. Here's what sets us apart:</p>
-            <ul>
-                <li class="list-item">Guided hikes tailored for novice hikers</li>
-                <li class="list-item">Local expertise in RTP's scenic trails</li>
-                <li class="list-item">Emphasis on safety and hiking essentials</li>
-                <li class="list-item">Community and lasting friendships</li>
-            </ul>
-        </div>
-        <div class="section">
-            <h2>Get Started</h2>
-            <p>Ready to join us on a hiking adventure? Here's what you'll need:</p>
-            <ul>
-                <li class="list-item">Water bottle or backpack</li>
-                <li class="list-item">Long pants and hat</li>
-                <li class="list-item">Hiking shoes (optional)</li>
-            </ul>
-            <p>Additional requirements:</p>
-            <ul>
-                <li class="list-item">Install Strava and All Trails apps</li>
-                <li class="list-item">No soliciting, marketing, or forwarding unrelated messages/content, please 🙏🏼</li>
-            </ul>
-            <p>Check out the <a class="link" href="https://www.rei.com/learn/expert-advice/day-hiking-checklist.html" target="_blank" rel="noopener noreferrer">Day Hiking Checklist</a> for more details.</p>
-        </div>
-        <div class="section video">
-            <h2>Hiking Tips</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/ucnVGjWAFyg" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="section">
-            <h2>Join RTP Hikers Guild</h2>
-            <p>Ready to embark on your hiking adventure? Join our WhatsApp group and connect with fellow hikers:</p>
-            <a class="link" href="https://chat.whatsapp.com/K9ekC9sPNhJErrguxylxYm" target="_blank" rel="noopener noreferrer">Join our WhatsApp Group</a>
-        </div>
-        <div class="section instagram-feed">
-            <!-- You can embed your Instagram feed here using the appropriate code -->
-            <!-- Replace the following placeholder with your Instagram feed code -->
-            <p><!-- LightWidget WIDGET -->
-<!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/c4ca2a74f4af5b1da0314869bab976fc.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:50%;border:0;overflow:hidden;"></iframe>         
-            </p>
-        </div>
+    <h1>RTP Hikers Guild</h1>
+    <p>Unleash Your Hiking Adventure</p>
+</div>
+<div class="container">
+    <div class="section">
+        <h2>Our Mission</h2>
+        <p>At RTP Hikers Guild, our mission is to inspire and empower novice hikers to embrace the wonders of hiking while fostering camaraderie and respect for nature. Hiking isn't just about conquering trails; it's a transformative experience that connects you with nature, improves fitness, and introduces you to a welcoming community of outdoor enthusiasts.</p>
     </div>
+    <div class="section">
+        <h2>Why Choose RTP Hikers Guild</h2>
+        <p>We're dedicated to providing a novice-friendly environment for hikers just starting their journey. Here's what sets us apart:</p>
+        <ul>
+            <li class="list-item">Guided hikes tailored for novice hikers</li>
+            <li class="list-item">Local expertise in RTP's scenic trails</li>
+            <li class="list-item">Emphasis on safety and hiking essentials</li>
+            <li class="list-item">Community and lasting friendships</li>
+        </ul>
+    </div>
+    <div class="section">
+        <h2>Get Started</h2>
+        <p>Ready to join us on a hiking adventure? Here's what you'll need:</p>
+        <ul>
+            <li class="list-item">Water bottle or backpack</li>
+            <li class="list-item">Long pants and hat</li>
+            <li class="list-item">Hiking shoes (optional)</li>
+        </ul>
+        <p>Additional requirements:</p>
+        <ul>
+            <li class="list-item">Install Strava and All Trails apps</li>
+            <li class="list-item">No soliciting, marketing, or forwarding unrelated messages/content, please 🙏🏼</li>
+        </ul>
+        <p>Check out the <a class="link" href="https://www.rei.com/learn/expert-advice/day-hiking-checklist.html" target="_blank" rel="noopener noreferrer">Day Hiking Checklist</a> for more details.</p>
+    </div>
+    <div class="section video">
+        <h2>Hiking Tips</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ucnVGjWAFyg" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="section">
+        <h2>Join RTP Hikers Guild</h2>
+        <p>Ready to embark on your hiking adventure? Join our WhatsApp group and connect with fellow hikers:</p>
+        <a class="link" href="https://chat.whatsapp.com/K9ekC9sPNhJErrguxylxYm" target="_blank" rel="noopener noreferrer">Join our WhatsApp Group</a>
+    </div>
+    <div class="section instagram-feed">
+        <!-- You can embed your Instagram feed here using the appropriate code -->
+        <!-- Replace the following placeholder with your Instagram feed code -->
+        <p><!-- LightWidget WIDGET -->
+            <!-- LightWidget WIDGET -->
+            <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+            <iframe src="//lightwidget.com/widgets/c4ca2a74f4af5b1da0314869bab976fc.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+        </p>
+    </div>
+</div>
 </body>
 </html>
